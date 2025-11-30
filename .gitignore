@@ -1,0 +1,21 @@
+# 进入项目根目录（DLLInject/ 所在的目录）
+# 创建一个 .gitignore 文件，并填入常见C++项目的忽略规则
+cat > .gitignore << 'EOF'
+## Visual Studio ##
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+ipch/
+*.sln.docstates
+
+## 编译输出 ##
+x64/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.obj
+*.idb
+EOF
